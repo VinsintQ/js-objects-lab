@@ -202,8 +202,13 @@ game.gymStatus = function gymStatus() {
       notcompleted += 1;
     }
   });
-  console.log("the completed is " + totalcompleted);
-  console.log("the incompleted is " + notcompleted);
+  gymTally.completed = totalcompleted;
+  gymTally.incompleted = notcompleted;
+  game.gymStatus;
+  console.log("this is gym tally");
+  console.log(gymTally);
+  // console.log("the completed is " + totalcompleted);
+  // console.log("the incompleted is " + notcompleted);
 };
 
 console.log("-----------------------------");
